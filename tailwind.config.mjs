@@ -11,6 +11,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+        body: ['Outfit', 'sans-serif'],
+      },
     },
   },
   plugins: [],
