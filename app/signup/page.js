@@ -1,9 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 function page() {
   return (
+    <>
+    <Navbar />
     <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
       <div className="flex items-center justify-center mt-7">
         <h1 className="text-5xl text-white">Sign up to Swap!</h1>
@@ -185,6 +189,8 @@ function page() {
         </button>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }
 

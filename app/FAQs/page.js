@@ -1,10 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 function About() {
   return (
     <>
+      <Navbar />
       <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-full w-full items-center px-5 py-24">
         <section className=" text-white">
           <div className="mx-auto max-w-7xl px-4 py-0 sm:px-6 lg:px-8">
@@ -79,7 +82,7 @@ function About() {
         
         
       </div>
-      {/* <About /> */}
+      <Footer />
     </>
   );
 }
