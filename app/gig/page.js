@@ -8,8 +8,8 @@ function page() {
   return (
     <>
       <FeedNavbar />
-      <div className="main-feed-content absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-full w-full flex flex-col justify-top items-center pt-20 text-white">
-        <h1 className="text-5xl text-white mt-11">
+      <div className="main-feed-content absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-full w-full flex flex-col justify-top items-center pt-20 text-white pb-11 px-8">
+        <h1 className="text-5xl text-white mt-11 text-center">
           C++ Data Structures Assignment Help
         </h1>
         <div className="flex header items-center mt-5 justify-center gap-4">
