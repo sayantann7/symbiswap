@@ -3,6 +3,14 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Script from "next/script";
 
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,6 +31,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider afterSignOutUrl="/">
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -34,5 +43,6 @@ export default function RootLayout({ children }) {
         />
       </body>
     </html>
+    </ClerkProvider>
   );
 }

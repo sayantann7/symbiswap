@@ -2,15 +2,18 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import FeedNavbar from "@/components/FeedNavbar";
+import { currentUser } from "@clerk/nextjs/server";
 
-function page() {
+async function page() {
+  const user = await currentUser();
+  const userFirstName = user?.firstName;
   return (
     <>
       <FeedNavbar />
       <div className="main-feed-content absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-full w-full items-center px-5 py-24">
         <div className="mx-auto text-center text-white container p-0 my-3 py-5 space-y-5 w-3/4 font-body">
           <div className="flex items-center justify-center">
-            <h1 className="text-5xl">Welcome Back Sayantan!</h1>
+            <h1 className="text-5xl">Welcome Back {userFirstName}!</h1>
           </div>
           <h1 className="text-2xl">Wanna swap today?</h1>
           <div className="gigs">
