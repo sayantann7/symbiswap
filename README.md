@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SymbiSwap
 
-## Getting Started
+SymbiSwap is a **peer-to-peer academic marketplace** that allows students to **exchange notes, assignments, previous year question papers (PYQs), and services** within their college ecosystem. It fosters a collaborative learning environment where students can trade educational resources efficiently.
 
-First, run the development server:
+## Features
+- **📚 Notes Exchange** – Access high-quality, handwritten and digital notes from peers.
+- **📝 Assignments Help** – Get assistance with coding, research, and academic projects.
+- **📖 Previous Year Questions (PYQs)** – Find past exam papers with solutions for better preparation.
+- **🛠 Services Marketplace** – Offer and request academic-related services like tutoring, resume reviews, and design work.
+- **🎖 Badge System** – Earn credibility through a **badge system** based on contributions and ratings.
+- **🔍 Advanced Search & Filters** – Easily find relevant academic content using smart filters.
+- **🔄 Barter System** – Exchange educational resources without monetary transactions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## How It Works
+1. **List a Gig** – Upload your notes, assignments, or offer a service.
+2. **Find What You Need** – Browse available resources and gigs.
+3. **Exchange & Collaborate** – Trade educational material or services seamlessly.
+4. **Earn Badges & Ratings** – Get recognized for contributions and build your academic reputation.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why SymbiSwap?
+- Encourages **knowledge sharing** among students.
+- Provides **affordable access** to high-quality academic resources.
+- Reduces academic stress by enabling peer collaboration.
+- Gamified learning experience with **badges and ratings.**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Join SymbiSwap and **enhance your learning experience through collaboration! 🚀**
