@@ -14,7 +14,7 @@
     "flowbite-react": "^0.10.2",
     "lucide-react": "^0.475.0",
     "mongodb": "^6.13.0",
-    "mongoose": "^8.10.0",
+    "mongoose": "^8.10.1",
     "next": "15.1.6",
     "pagedone": "^1.2.2",
     "reach": "^1.0.1",
