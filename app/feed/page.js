@@ -1,10 +1,7 @@
-import { currentUser } from "@clerk/nextjs/server";
 import Link from "next/link";
 import FeedNavbar from "@/components/FeedNavbar";
 
 async function page() {
-  const user = await currentUser();
-  const userFirstName = user?.firstName;
 
   return (
     <>
@@ -13,7 +10,7 @@ async function page() {
         <div className="mx-auto max-w-7xl mt-20">
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold mb-4">
-              Welcome Back {userFirstName}!
+              Welcome Back Sayantan!
             </h1>
             <h2 className="text-xl sm:text-2xl text-white">Wanna swap today?</h2>
           </div>

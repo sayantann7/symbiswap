@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { UserButton } from "@clerk/nextjs";
 import { User } from "lucide-react";
 
 function FeedNavbar() {
@@ -60,13 +59,6 @@ function FeedNavbar() {
               </svg>
             </button>
           </Link>
-              <UserButton 
-                appearance={{
-                  elements: {
-                    avatarBox: "h-11 w-11",
-                  },
-                }}
-               />
 
           <button
             data-collapse-toggle="navbar-cta"

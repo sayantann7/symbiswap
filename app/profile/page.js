@@ -2,32 +2,26 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import FeedNavbar from "@/components/FeedNavbar";
-import { currentUser } from "@clerk/nextjs/server";
 
 async function page() {
-  const user = await currentUser();
-  const userFullName = user?.firstName + " " + user?.lastName;
-  const imgURL = user?.imageUrl;
   return (
     <>
       <FeedNavbar />
       <div className="main-feed-content absolute inset-0 -z-10 h-full w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] h-full w-full flex flex-col justify-top items-center pt-20 pb-11 px-11">
         <div className="flex items-center justify-center gap-5 mt-11">
         <div className="relative inline-flex items-center justify-center mt-0 w-40 h-40 overflow-hidden bg-gray-50 rounded-full dark:bg-gray-500 rounded-full ring-2 ring-purple-700 dark:ring-purple-600">
-        {imgURL && (
-                <Image 
-                  src={imgURL} 
+        <Image 
+                  src="/avatar.png"
                   alt="Profile"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 128px, 160px"
                 />
-              )}
         </div>
         <div className="flex flex-col items-center justify-center mt-5">
           <div className="flex items-center justify-center gap-1">
             <h1 className="font-bold text-3xl text-white dark:text-gray-50">
-              {userFullName}
+              Sayantan Nandi
             </h1>
             <svg
               className="w-6 h-6 text-gray-800 dark:text-white"
